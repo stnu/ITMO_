@@ -10,14 +10,14 @@ class Car:
     def stop(self):
         print("Автомобиль заглушен")
 
-    def add_year(self):
-        self.year = "1985"
+    def add_year(self, y_new):
+        self.year = y_new
 
-    def add_type(self):
-        self.type = "пикап"
+    def add_type(self, t_new):
+        self.type = t_new
 
-    def add_color(self):
-        self.color = "синий"
+    def add_color(self, t_color):
+        self.color = t_color
 
 
 # в задании нет выведения в консоль
