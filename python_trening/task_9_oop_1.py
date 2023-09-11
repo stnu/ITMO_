@@ -3,8 +3,7 @@ from task_9_checks import Check
 
 class Input(Check):
     def __init__(self, text, loc):
-        super().__init__(self)
-        self.loc = loc
+        super().__init__(loc)
         self.text = text
 
 
@@ -15,9 +14,8 @@ print(search.loc)
 
 class Button(Check):
     def __init__(self, text, loc):
-        super().__init__(self)
+        super().__init__(loc)
         self.text = text
-        self.loc = loc
 
 
 home = Button("Home ", "locator.button")
@@ -25,10 +23,8 @@ home = Button("Home ", "locator.button")
 
 class Title(Check):
     def __init__(self, text, loc):
-        super().__init__(self)
-
+        super().__init__(loc)
         self.text = text
-        self.loc = loc
 
 
 object_title = Title("Title ", "locator.title")
@@ -36,9 +32,8 @@ object_title = Title("Title ", "locator.title")
 
 class Link(Check):
     def __init__(self, text, loc):
-        super().__init__(self)
+        super().__init__(loc)
         self.text = text
-        self.loc = loc
 
 
 object_link = Link("Link ", "locator.link")
